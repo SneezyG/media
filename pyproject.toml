@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "media"
+version = "0.1.0"
+description = ""
+authors = ["sneezyg <ahmadgbolly97@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.3"
+django-ninja = "^1.1.0"
+psycopg2 = "^2.9.9"
+pillow = "^10.2.0"
+poetry-dotenv-plugin = "^0.2.0"
+pytest-django = "^4.8.0"
+faker = "^24.3.0"
+celery = "^5.3.6"
+redis = "^5.0.3"
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "media.settings"
+python_files = ["test_*.py", "*_test.py", "tests.py"]
+filterwarnings = ["ignore::DeprecationWarning"]
