@@ -6,7 +6,6 @@ API development with django-ninja using celery for asynchronous task management
 
 1. [Installation](#installation)
 2. [Usage](#usage)
-3. [Specification](#specification)
 
 
 ## Installation
@@ -47,7 +46,7 @@ API development with django-ninja using celery for asynchronous task management
 1. Navigate to the project directory:
 
     ```bash
-    cd nedia
+    cd media
     ```
 
 2. Start the neccessary services(redis, postgress and celery:
